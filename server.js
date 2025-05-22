@@ -11,9 +11,9 @@ const PerformanceModel = require('./models/PerformanceModel'); // Import the new
 
 const Mongourl = process.env.MONGO_URL;
 
-// Enable CORS for requests from http://localhost:3000 and allow specific headers
+// Enable CORS for requests from http://localhost:3000 and https://scalers-internaltool.vercel.app and allow specific headers
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000', 'https://scalers-internaltool.vercel.app'], // Allow localhost and hosted frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
