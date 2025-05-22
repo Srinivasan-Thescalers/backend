@@ -1,0 +1,22 @@
+sudo su -
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+
+. ~/.nvm/nvm.sh
+
+nvm install node
+
+node -v
+npm -v
+
+sudo apt-get update -y
+sudo apt-get install git -y
+
+git — version
+
+git clone
+
+
+
+cd nodejs
+npm install
